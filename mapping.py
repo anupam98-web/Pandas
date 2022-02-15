@@ -43,7 +43,7 @@ for i in list(set(maindf['JOB_ID'])).sort():
     jobID[i] = job_count
     job_count = job_count + 1
 
-pd.DataFrame(jobID.items(), columns=['JOB_ID', 'DummyJobID']).to_csv('jobidmathcing.csv',index=False)
-pd.DataFrame(candidateID.items(), columns=['CANDIDATE_ID', 'DummyCandidateID']).to_csv('candidmathcing.csv',index=False)
-pd.DataFrame(clientID.items(), columns=['CLIENT_ID', 'DateValue']).to_csv('clientidmathcing.csv',index=False)
-pd.DataFrame(assignmentID.items(), columns=['ASSIGNMENT_ID', 'DateValue']).to_csv('assignmentIDmathcing.csv',index=False)
+pd.DataFrame(jobID.items(), columns=['JOB_ID', 'DummyJobID']).to_csv('JM.csv',index=False)
+pd.DataFrame(candidateID.items(), columns=['CANDIDATE_ID', 'DummyCandidateID']).to_csv('CaM.csv',index=False)
+pd.DataFrame(clientID.items(), columns=['CLIENT_ID', 'DateValue']).to_csv('C.csv',index=False)
+pd.DataFrame(assignmentID.items(), columns=['ASSIGNMENT_ID', 'DateValue']).to_csv('A.csv',index=False)

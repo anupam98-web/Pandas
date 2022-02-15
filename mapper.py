@@ -26,9 +26,9 @@ for i in a:
 
 
 
-pd.DataFrame(assignmentID.items(), columns=['ASSIGNMENT_ID', 'DateValue']).to_csv('assignmentIDmathcingNonMPG.csv',index=False)
-# #clientmap = pd.read_csv('clientidmathcing.csv')
-candmap = pd.read_csv('candidmathcing.csv')
+pd.DataFrame(assignmentID.items(), columns=['ASSIGNMENT_ID', 'DateValue']).to_csv('A.csv',index=False)
+# #clientmap = pd.read_csv('C.csv')
+candmap = pd.read_csv('Ca.csv')
 canddict = dict(zip(candmap.CANDIDATE_ID, candmap.DummyCandidateID))
 # #jobdict = dict(zip(jobmap.JOB_ID, jobmap.DummyJobID))
 
